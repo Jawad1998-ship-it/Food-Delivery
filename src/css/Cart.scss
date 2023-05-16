@@ -1,0 +1,172 @@
+.cart-page
+{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    scroll-behavior: smooth;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .cart-header
+    {       
+        width: 100%;            
+        border: 1px solid #222;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        background-color: #222;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 400px;
+        }
+        @media screen and (max-width: 425px) {
+            height: 350px;
+            width: 300px;
+        }
+
+        .cart-title
+        {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            color: #fff;
+            letter-spacing: 3px;
+            margin-top: 1rem;
+        }
+        .cart-info
+        {   
+            height: 100%;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            padding: 70px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: 425px) {
+                padding: 20px;
+            }
+            .purchase
+            {
+                padding: 10px 15px;
+                border: none;
+                background-color: yellow;
+                color: #222;
+                cursor: pointer;
+            }
+        }
+
+    }
+    
+    .cart
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        .cart-items
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 180px;
+            min-width: 600px;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px 5px rgb(102, 97, 97);
+            padding: 25px;
+            border-radius: 10px;
+            @media screen and (max-width: 425px) {
+                min-width: 300px;
+            }
+
+            .desc
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 20px;
+                font-size: 18px;
+                @media screen and (min-width: 1440px) {
+                    font-size: 26px;
+                }
+                @media screen and (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+            .cart-image
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                @media screen and (max-width: 425px) {
+                    gap: 5px;
+                }
+                button
+                {
+                    height: 40px;
+                    width: 40px;
+                    font-size: 30px;
+                    cursor: pointer;
+                    background-color: yellow;
+                    border-radius: 10px;
+                    border: none;
+                    @media screen and (max-width: 425px) {
+                        height: 24px;
+                        width: 24px;
+                        font-size: 22px;
+                    }
+                }
+                img
+                {
+                    height: 120px;
+                    width: 120px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    @media screen and (max-width: 425px) {
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+            }
+            .remove
+            {
+                font-size: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                color: red;
+                @media screen and (max-width: 425px) {
+                    font-size: 28px;
+                }
+            }
+        }   
+    }
+    
+}

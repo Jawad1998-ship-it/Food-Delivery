@@ -1,0 +1,113 @@
+.category
+{
+    min-height: calc(100vh - 80px);
+}
+
+.title
+{
+    color: #222;
+    font-size: 50px;
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    width: 100%;
+    @media screen and (max-width: 425px) {
+            font-size: 30px;
+            bottom: 20%;
+    }
+}
+
+.burger
+{
+    width: 500px;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    @media screen and (max-width: 425px) {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 4rem;
+    }
+}
+
+.fries1
+{
+    position: absolute;
+    left: 0;
+    top: 18%;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1.6s infinite  alternate;
+    @media screen and (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        top: 28%;
+    }
+    @media screen and (max-width: 425px) {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        top: 28%;
+        width: fit-content;
+    }
+}
+
+.fries2
+{
+    position: absolute;
+    top: 18%;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1.6s infinite  alternate;
+    @media screen and (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        position: absolute;
+        right: 0;
+        top: 28%;
+    }
+    @media screen and (max-width: 425px) {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        position: absolute;
+        right: 0;
+        top: 28%;
+        width: fit-content;
+    }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+

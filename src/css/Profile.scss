@@ -1,0 +1,71 @@
+.profile
+{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    gap: 2rem;
+
+    @media screen and (max-width: 425px) 
+    {
+        flex-direction: column;
+    }
+    
+    .info
+    {    
+        position: relative;
+        width: calc(100vw - 180px);
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0%;
+            margin-bottom: 6%;
+        }
+        @media screen and (max-width: 425px) {
+            margin-top: 25%;
+            margin-left: 5%;
+        }
+        div
+        {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            .title-text
+            {
+                font-size: 20px;
+                font-weight: 700;
+                @media screen and (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+            .small-text
+            {
+                font-size: 18px;
+                @media screen and (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .editBtn
+    {
+        position: relative;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 10px;
+        a
+        {
+            text-decoration: none;
+            &:active
+            {
+                color: #222;
+            }
+        }
+    }
+}

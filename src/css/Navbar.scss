@@ -1,0 +1,117 @@
+.navbar
+{   
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background: #222;
+    color: #fff!important;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .logo
+    {
+        img
+        {
+            width: 57px;
+            height: 57px;
+            object-fit: contain;
+        }
+    }
+
+    .nav-menu
+    {   
+        display: flex;
+        width: 100%;
+        @media screen and (max-width: 700px)
+        {
+            display: none;
+        }
+        ul
+        {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            li
+            {          
+                text-decoration: none;    
+                a
+                {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .naming
+    {
+        width: 100%;
+        text-align: right;
+        margin-right: 20px;
+        span
+        {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        @media screen and (max-width: 425px)
+        {
+            display: none;
+        }
+    }
+
+    .cart
+    {   
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .cart-item
+        {
+            background-color: yellow;
+            color: #222;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 21px;
+            text-align: center;
+        }
+        a
+        {
+            text-decoration: none;
+            svg
+            {
+                width: 30px;
+                height: 30px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }    
+        .hamburger
+        {
+            visibility: hidden;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            @media screen and (max-width: 700px)
+            {
+                visibility: visible;
+                color: #fff;
+            }
+        }
+    }
+
+
+
+}

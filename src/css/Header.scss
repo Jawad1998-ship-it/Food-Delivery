@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
+
+
+.header
+{
+    .banner
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-image: url("../images/meat-pizza-banner.jpg");
+        min-height: calc(100vh - 80px);
+        gap: 10px;
+        h2
+        {
+            color: aliceblue;
+            font-family: Roboto, sans-serif!important;
+            line-height: 1.4;
+            color: yellow!important;
+        }
+        .bold-text
+        {   
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+            z-index: 111;
+        }
+        .input_container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            .search
+            {
+                max-width: 100%;
+                width: 280px;
+                height: 50px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                border-radius: 10px;
+                padding: 15px 25px;
+                outline: none;
+                color: #fff;
+                font-size: 20px;
+                letter-spacing: 2px;
+                font-weight: bold;
+                @media screen and (max-width: 768px)
+                {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            button
+            {
+                height: 50px;
+                padding: 0 20px;
+                border: none;
+                color: #222;
+                background-color: rgb(255, 255, 125);
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .search::placeholder
+            {
+                color: #fff;
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.sidebar
+{
+        min-height: 100vh;
+        background-color: #222;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 50px;
+        padding: 20px;
+        border-right: 1px solid rgb(255, 252, 77) ;
+        float: left;
+        position: relative;
+
+        @media screen and (max-width: 425px) {
+            flex-direction: row;
+            min-height: auto;
+            height: 60px;
+            min-width: 100%;
+            top: 14.8%;
+            float: none;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        a
+        {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            @media screen and (min-width: 1440px) {
+                font-size: 26px;
+            }
+        }
+}

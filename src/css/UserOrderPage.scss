@@ -1,0 +1,158 @@
+.user-order
+{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    
+
+    @media screen and (max-width: 425px) 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .user-purchased
+    {   
+        position: relative;
+        min-height: 100vh;
+        width: calc(100vw - 180px);
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+
+        @media screen and (max-width: 425px) 
+        {
+            padding: 10px;
+            margin-top: 18%;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .purchased-items
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #222;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            gap: 15px;
+            box-shadow: 4px 4px 4px 4px rgb(121, 113, 113);
+            border-radius: 10px;
+            cursor: default;
+            &:hover
+            {
+                transform: scale(1.01);
+                transition: 0.4s ease-in;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            @media screen and (max-width: 425px) {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 310px;
+                border-radius: 10px;
+            }
+            .purchased-desc
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                font-weight: 600;
+                height: 100%;
+                font-size: 20px;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 425px) {
+                    flex-direction: column;
+                    font-size: 16px;
+                    gap: 14px;
+                }
+                
+                .price
+                {
+                    color: goldenrod;
+                    font-weight: 500;
+                    font-size: 18px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 425px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .cart-image img
+            {
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+                @media screen and (max-width: 768px) {
+                    width: 90px;
+                    height: 90px;
+                }
+                @media screen and (max-width: 425px) {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .cancel-btn
+            {
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: #222;
+                color: #fff;
+
+                @media screen and (min-width: 1440px) {
+                    font-size: 26px;
+                }
+                @media screen and (max-width: 425px) {
+                    font-size: 12px;
+                    padding: 10px 15px;
+                }
+
+            }
+            .status
+            {
+                color: rgb(61, 61, 255);
+                font-size: 16px;
+                @media screen and (min-width: 1440px) {
+                    font-size: 26px;
+                }
+                @media screen and (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+}

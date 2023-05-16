@@ -1,0 +1,187 @@
+.register
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    background-image: url("../images/banner.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    gap: 5rem;
+    animation:  0.5s ease;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        gap: 15px;
+    }
+    .bold-text
+    {
+        color: #fff!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 41px;
+        margin-left: 1rem;
+    }
+    .btn
+    {
+        padding: 13px 16px;
+        background: #222;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .company
+    {
+        form
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+            border: 1px solid #222;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #fff;
+            .comContainer
+            {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;  
+                .comInput
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 6px;
+                    padding: 5px;
+                    input
+                    {
+                        width: 250px;
+                        height: 33px;
+                        border: 1px solid #222;
+                        outline: none;
+                        border-radius: 10px;
+                        padding-left: 10px;
+                        font-size: 18px;
+                        @media screen and (max-width: 768px){
+                            width: 220px;
+                        }
+                    } 
+                    .error
+                    {
+                        color: red;
+                        font-size: 15px;
+                        height: 20px;
+                    }
+                }
+                .file
+                {
+                    padding-top: 3px;
+                }
+            }
+            button
+            {
+                padding: 10px 15px;
+                background-color: #222;
+                color: #fff;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100%;
+            }
+            .account
+            {
+                font-size: 16px;
+                font-weight: 600;
+                a
+                {
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+        }
+    }
+    .user
+    {
+        form
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+            border: 1px solid #222;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: all 0.5s ease;
+
+            .userContainer
+            {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                .userInp
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 6px;
+                    padding: 5x;
+                    .error
+                    {
+                        color: red;
+                        font-size: 15px;
+                        height: 20px;
+                    }
+
+                    input
+                    {
+                        width: 250px;
+                        height: 33px;
+                        border: 1px solid #222;
+                        outline: none;
+                        border-radius: 10px;
+                        padding-left: 10px;
+                        font-size: 18px;
+                        @media screen and (max-width: 768px){
+                            width: 220px;
+                        }
+                    } 
+                }
+            }
+            
+            button
+            {
+                padding: 10px 15px;
+                background-color: #222;
+                color: #fff;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100%;
+            }
+            .account
+            {
+                font-size: 16px;
+                font-weight: 600;
+                a
+                {
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+}

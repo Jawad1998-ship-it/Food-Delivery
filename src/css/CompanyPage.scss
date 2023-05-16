@@ -1,0 +1,158 @@
+.company-page
+{
+    min-height: calc(100vh - 400px);
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;  
+    @media screen and (max-width: 425px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+
+    .company-orders
+    {   
+        height: 100%;
+        display: flex;
+        width: calc(100vw - 180px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        @media screen and (max-width: 425px) {
+            padding: 1px;
+        }
+
+        .user-info
+        {   
+            padding: 35px;
+            height: 100%;
+            width: 800px;
+            border: 1px solid #222;
+            background-color: #222;
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px; 
+            @media screen and (max-width: 1024px) {
+                width: 500px;
+                justify-content: center;
+            }
+            @media screen and (max-width: 768px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 425px) {
+                padding: 10px;
+            }
+            
+            .address
+            {
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 400;
+            }
+            
+            .delivery-inp
+            {   
+                height: 35px;
+                width: 250px;
+                padding-left: 8px;
+                border: none;
+                outline: none;
+                font-size: 17px;
+                border-radius: 10px;
+                @media screen and (min-width: 1440px) {
+                    height: 30px;
+                    width: 300px;
+                }
+            }
+            
+            @media screen and (max-width: 768px) {
+                height: 400px;
+                width: 500px;
+            }
+
+
+            @media screen and (max-width: 425px) {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                height: 300px;
+                width: 350px;
+            }
+
+            @media screen and (max-width: 325px) {
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                height: 250px;
+                width: 300px;
+            }
+        
+       
+            .company-select
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border: none;
+                .company-btn
+                {
+                    padding: 10px 15px;
+                    background-color: yellow;
+                    color: #222;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        
+        }
+    }
+    .total-sell
+    {
+        font-size: 22px;
+        font-weight: 600;
+        color: yellow;
+        text-align: right;
+        border: 1px solid #222;
+        padding: 20px;
+        background: #222;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 15%;
+        width: calc(100vw - 180px);
+        border-top: 1px solid rgb(255, 252, 77);
+        @media screen and (max-width: 768px) 
+        {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 425px) 
+        {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            height: 100%;
+            width: 100%;
+            border-top: 1px solid rgb(255, 252, 77);
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.dashboard-companies
+{
+    min-height: calc(100vh - 400px);
+    width: 100%!important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 10px;
+    @media screen and (max-width: 425px) 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .companies-container
+    { 
+        height: 100%;
+        width: calc(100vw - 198px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 30px;
+
+        .company-owner
+        {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 5px 5px 5px gray;
+            @media screen and (max-width: 768px) {
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            @media screen and (max-width: 425px) {
+                height: 100%;
+                width: 300px;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 4rem;
+            }
+        }
+       
+        .company-address
+        {
+            width: 40%;
+            @media screen and (max-width: 768px) {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .company-delete
+        {
+            .company-delete-btn
+            {
+                padding: 5px 15px;
+                border: none;
+                background-color: red;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
+}
